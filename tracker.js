@@ -48,7 +48,7 @@
   function load(k, fb) { try { return JSON.parse(localStorage.getItem(k)) ?? fb; } catch { return fb; } }
   function save(k, v) { localStorage.setItem(k, JSON.stringify(v)); }
   function fmt(n) {
-    const s = CURRENCY_SYMBOLS[settings.currency] || "$";
+    const s = CURRENCY_SYMBOLS[settings.currency] || "₹";
     return s + Number(n || 0).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   }
   function today() { return new Date().toISOString().slice(0, 10); }
