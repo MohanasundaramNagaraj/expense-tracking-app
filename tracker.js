@@ -34,7 +34,7 @@
     dark: false,
   };
 
-  const CURRENCY_SYMBOLS = { USD:"$", EUR:"€", GBP:"£", INR:"₹", JPY:"¥", AUD:"A$" };
+  const CURRENCY_SYMBOLS = { INR:"₹", USD:"$", EUR:"€", GBP:"£",  JPY:"¥", AUD:"A$" };
 
   // ---------- State ----------
   let transactions = load(K.tx, []);
